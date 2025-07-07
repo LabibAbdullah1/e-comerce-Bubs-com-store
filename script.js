@@ -19,7 +19,7 @@ const productsData = [
     id: 3,
     name: "SSD NVMe 1TB Samsung 980 Pro",
     price: 1800000,
-    image: "https://images.tokopedia.net/img/cache/250-square/VqbcmM/2025/5/6/f7a479e1-d1ae-41a1-bbec-26ba57644829.jpg?ect=4ghttps://via.placeholder.com/250x180/5C6BC0/FFFFFF?text=SSD+NVMe",
+    image: "https://images.tokopedia.net/img/cache/250-square/VqbcmM/2025/5/6/f7a479e1-d1ae-41a1-bbec-26ba57644829.jpg?ect=4g",
     category: "sparepart",
   },
   {
