@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubs Store - Laptop, PC & Spare Part Terlengkap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">Bubs Com Store</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Cari Laptop, PC, atau Spare Part..." id="searchInput">
+        </div>
+        <div class="nav-icons">
+          <div class="icon" id="cartIcon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Selamat Datang di Bubs Com Store!</h1>
+        <p>Pusatnya laptop, PC rakitan, dan spare part komputer terlengkap dengan kualitas terbaik dan harga bersaing.
+          Temukan semua kebutuhan teknologi Anda di sini!</p>
+        <a href="#products" class="btn">Lihat Produk Kami</a>
+      </div>
+    </section>
+
+    <section id="products" class="products-section container">
+      <h2>Produk Unggulan Kami</h2>
+      <div class="product-grid" id="productGrid">
+        <div class="product-card">
+          <img src="" alt="Laptop Gaming">
+          <h3>Laptop Gaming XYZ Pro (RTX 4070)</h3>
+          <p class="price">Rp 25.000.000</p>
+          <button class="add-to-cart-btn" data-id="1" data-name="Laptop Gaming XYZ Pro" data-price="25000000"
+            data-image="https://via.placeholder.com/250x180/8EC5FC/FFFFFF?text=Laptop+Gaming">Tambah ke
+            Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=PC+Rakitan" alt="PC Rakitan">
+          <h3>PC Rakitan High-End (Core i9, 32GB RAM)</h3>
+          <p class="price">Rp 20.000.000</p>
+          <button class="add-to-cart-btn" data-id="2" data-name="PC Rakitan High-End" data-price="20000000"
+            data-image="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=PC+Rakitan">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/5C6BC0/FFFFFF?text=SSD+NVMe" alt="SSD NVMe">
+          <h3>SSD NVMe 1TB Samsung 980 Pro</h3>
+          <p class="price">Rp 1.800.000</p>
+          <button class="add-to-cart-btn" data-id="3" data-name="SSD NVMe 1TB Samsung 980 Pro" data-price="1800000"
+            data-image="https://via.placeholder.com/250x180/5C6BC0/FFFFFF?text=SSD+NVMe">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/8EC5FC/FFFFFF?text=RAM+DDR4" alt="RAM DDR4">
+          <h3>RAM DDR4 16GB (2x8GB) Corsair Vengeance</h3>
+          <p class="price">Rp 900.000</p>
+          <button class="add-to-cart-btn" data-id="4" data-name="RAM DDR4 16GB Corsair Vengeance" data-price="900000"
+            data-image="https://via.placeholder.com/250x180/8EC5FC/FFFFFF?text=RAM+DDR4">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=VGA+Card" alt="VGA Card">
+          <h3>VGA Card AMD Radeon RX 7900 XT</h3>
+          <p class="price">Rp 15.000.000</p>
+          <button class="add-to-cart-btn" data-id="5" data-name="VGA Card AMD Radeon RX 7900 XT" data-price="15000000"
+            data-image="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=VGA+Card">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/5C6BC0/FFFFFF?text=Motherboard" alt="Motherboard">
+          <h3>Motherboard ASUS ROG Strix Z790-E</h3>
+          <p class="price">Rp 7.500.000</p>
+          <button class="add-to-cart-btn" data-id="6" data-name="Motherboard ASUS ROG Strix Z790-E" data-price="7500000"
+            data-image="https://via.placeholder.com/250x180/5C6BC0/FFFFFF?text=Motherboard">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/8EC5FC/FFFFFF?text=Monitor" alt="Monitor">
+          <h3>Monitor Gaming Curved 27" (144Hz)</h3>
+          <p class="price">Rp 4.500.000</p>
+          <button class="add-to-cart-btn" data-id="7" data-name="Monitor Gaming Curved 27" data-price="4500000"
+            data-image="https://via.placeholder.com/250x180/8EC5FC/FFFFFF?text=Monitor">Tambah ke Keranjang</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=Keyboard" alt="Keyboard">
+          <h3>Keyboard Mekanikal Gaming RGB</h3>
+          <p class="price">Rp 800.000</p>
+          <button class="add-to-cart-btn" data-id="8" data-name="Keyboard Mekanikal Gaming RGB" data-price="800000"
+            data-image="https://via.placeholder.com/250x180/E0C3FC/FFFFFF?text=Keyboard">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cartPaymentSection" class="cart-payment-section container">
+      <h2>Keranjang Belanja & Pembayaran</h2>
+      <div class="cart-items" id="cartItemsContainer">
+        <p id="emptyCartMessage">Keranjang Anda kosong. Silakan tambahkan produk!</p>
+      </div>
+      <div class="cart-summary">
+        Total: <span id="cartTotal">Rp 0</span>
+      </div>
+
+      <div class="address-form">
+        <h3>Informasi Pengiriman</h3>
+        <div class="form-group">
+          <label for="fullName">Nama Lengkap:</label>
+          <input type="text" id="fullName" placeholder="Masukkan nama lengkap Anda" required>
+          <span class="error-message" id="fullNameError">Nama lengkap harus diisi.</span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Nomor HP:</label>
+          <input type="tel" id="phone" placeholder="Contoh: 081234567890" pattern="[0-9]{10,14}" required>
+          <span class="error-message" id="phoneError">Nomor HP harus diisi dan valid (10-14 digit angka).</span>
+        </div>
+        <div class="form-group">
+          <label for="province">Provinsi:</label>
+          <select id="province" required>
+            <option value="">Pilih Provinsi</option>
+          </select>
+          <span class="error-message" id="provinceError">Provinsi harus dipilih.</span>
+        </div>
+        <div class="form-group">
+          <label for="citySelect">Kabupaten/Kota:</label>
+          <select id="city" required disabled>
+            <option value="">Pilih Kabupaten/Kota</option>
+          </select>
+          <span class="error-message" id="cityError">Kabupaten/Kota harus dipilih.</span>
+        </div>
+        <div class="form-group">
+          <label for="addressDetail">Alamat Lengkap (Jalan, No Rumah, RT/RW, Kelurahan, Kecamatan):</label>
+          <textarea id="addressDetail"
+            placeholder="Contoh: Jl. Merdeka No. 10, RT 001/RW 002, Kel. Sukamaju, Kec. Mandiri" required></textarea>
+          <span class="error-message" id="addressDetailError">Alamat lengkap harus diisi.</span>
+        </div>
+        <div class="form-group">
+          <label for="postalCode">Kode Pos:</label>
+          <input type="text" id="postalCode" placeholder="Contoh: 12345" pattern="[0-9]{5}" required>
+          <span class="error-message" id="postalCodeError">Kode Pos harus diisi dan 5 digit angka.</span>
+        </div>
+      </div>
+      <div class="payment-methods">
+        <h3>Pilih Metode Pembayaran</h3>
+        <div class="payment-options" id="paymentOptions">
+          <div class="payment-option" data-method="bank_bca">
+            <img src="https://buatlogoonline.com/wp-content/uploads/2022/10/Logo-BCA-PNG.png" alt="BCA">
+            <p>Bank BCA</p>
+          </div>
+          <div class="payment-option" data-method="bank_mandiri">
+            <img src="https://oil24store.com/wp-content/uploads/2024/05/PT-Bank-Mandiri-Tbk-150x150.png" alt="Mandiri">
+            <p>Bank Mandiri</p>
+          </div>
+          <div class="payment-option" data-method="bank_bri">
+            <img
+              src="https://nabiilahstore.com/wp-content/uploads/2020/11/Logo-BRI-Bank-Rakyat-Indonesia-PNG-Terbaru.png"
+              alt="BRI">
+            <p>Bank BRI</p>
+          </div>
+          <div class="payment-option" data-method="bank_bni">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png"
+              alt="BNI">
+            <p>Bank BNI</p>
+          </div>
+          <div class="payment-option" data-method="bank_danamon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Danamon.svg/1024px-Danamon.svg.png"
+              alt="Danamon">
+            <p>Bank Danamon</p>
+          </div>
+          <div class="payment-option" data-method="bank_cimb">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/CIMB_Niaga_logo.svg" alt="CIMB">
+            <p>Bank CIMB Niaga</p>
+          </div>
+          <div class="payment-option" data-method="bank_permata">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Permata_Bank_%282024%29.svg/2560px-Permata_Bank_%282024%29.svg.png"
+              alt="Permata">
+            <p>Bank Permata</p>
+          </div>
+          <div class="payment-option" data-method="bank_btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/BTN_2024.svg/2560px-BTN_2024.svg.png"
+              alt="BTN">
+            <p>Bank BTN</p>
+          </div>
+          <div class="payment-option" data-method="ewallet_gopay">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9YUwWTjUqlO04YDbTs51HpkmZSZLe2Px6g&s"
+              alt="GoPay">
+            <p>GoPay</p>
+          </div>
+          <div class="payment-option" data-method="ewallet_ovo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo_ovo_purple.svg/2560px-Logo_ovo_purple.svg.png"
+              alt="OVO">
+            <p>OVO</p>
+          </div>
+          <div class="payment-option" data-method="ewallet_dana">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png"
+              alt="DANA">
+            <p>DANA</p>
+          </div>
+          <div class="payment-option" data-method="ewallet_shopeepay">
+            <img
+              src="https://tokpee.co/blog/wp-content/uploads/2025/03/Begini-Cara-Membagikan-Kode-QR-ShopeePay-Biar-Uang-Langsung-Masuk-512x269.webp"
+              alt="ShopeePay">
+            <p>ShopeePay</p>
+          </div>
+          <div class="payment-option" data-method="ewallet_linkaja">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/LinkAja.svg/1200px-LinkAja.svg.png"
+              alt="LinkAja">
+            <p>LinkAja</p>
+          </div>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" disabled>Bayar Sekarang</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Bubs Com Store | labib abdullah . Semua Hak Dilindungi.</p>
+    </div>
+  </footer>
+
+  <div id="receiptModal" class="receipt-modal">
+    <div class="receipt-content">
+      <span class="close-button">&times;</span>
+      <div class="receipt-header">
+        <h2>Bon Belanja Bubs Store</h2>
+        <p>Terima kasih telah berbelanja!</p>
+      </div>
+      <div class="receipt-details">
+        <p><strong>Nomor Pesanan:</strong> <span id="receiptOrderNumber">#ORD12345</span></p>
+        <p><strong>Tanggal:</strong> <span id="receiptDate"></span></p>
+        <p><strong>Nama Penerima:</strong> <span id="receiptFullName"></span></p>
+        <p><strong>No. HP:</strong> <span id="receiptPhone"></span></p>
+        <p><strong>Alamat Pengiriman:</strong> <span id="receiptAddress"></span></p>
+        <p><strong>Metode Pembayaran:</strong> <span id="receiptPaymentMethod"></span></p>
+      </div>
+      <div class="receipt-items">
+        <h3>Detail Pesanan:</h3>
+        <div id="receiptItemsContainer">
+        </div>
+      </div>
+      <div class="receipt-total">
+        Total Belanja: <span id="receiptTotal">Rp 0</span>
+      </div>
+      <button id="downloadReceiptBtn" class="download-btn">Unduh Bon sebagai Gambar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
